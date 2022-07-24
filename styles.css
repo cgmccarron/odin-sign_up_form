@@ -46,9 +46,28 @@ form {
 
 .info-p {
   height: 15vh;
-  padding: 10% 5% 0 5%;
+  padding: 10% 5%;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.title {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(20, 0, 0, 0.4);
+  height: 70px;
+  width: 100%;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 5px;
+}
+
+img {
+  height: 60px;
+  margin-right: 20px;
 }
 
 .credit-text {
@@ -79,9 +98,14 @@ button {
   margin-bottom: 10px;
 }
 
-label > input {
+input {
   border: 2px solid #e5e7eb;
-  border-radius: 10px;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #4393b0;
 }
 
 label {
