@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./index.js" defer></script>
@@ -11,7 +17,19 @@
   </head>
   <body>
     <div class="sidebar">
-      <img src="./images/city.jpg" />
+      <!--<img src="./images/trees.jpg" /> -->
+      <p class="credit-text">
+        Photo by
+        <a
+          href="https://unsplash.com/@thomaschan523?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Thomas Chan</a
+        >
+        on
+        <a
+          href="https://unsplash.com/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
     </div>
     <div class="form-container">
       <p class="info-p">
@@ -20,26 +38,28 @@
         as your next web dev!
       </p>
       <form action="#" method="#" class="Sign up Form">
-        <div class="form-header"> Let's do this!</div>
+        <div class="form-header">Let's do this!</div>
         <label for="firstName">
-          First Name <br><input id="firstName" type="text"
+          First Name <br /><input id="firstName" type="text"
         /></label>
         <label for="lastName">
-          Last Name <br><input id="lastName" type="text"
+          Last Name <br /><input id="lastName" type="text"
         /></label>
-        <label for="email">Email <br><input id="email" type="email" /></label>
+        <label for="email">Email <br /><input id="email" type="email" /></label>
         <label for="phoneNumber"
-          >Phone Number <br><input id="phoneNumber" type="tel"
+          >Phone Number <br /><input id="phoneNumber" type="tel"
         /></label>
         <label for="password"
-          >Password <br><input id="password" type="password"
+          >Password <br /><input id="password" type="password"
         /></label>
         <label for="confirmPassword"
-          >Confirm Password <br><input id="confirmPassword" type="password"
+          >Confirm Password <br /><input id="confirmPassword" type="password"
         /></label>
       </form>
-      <button type="submit">Create Account</button>
-      <p class="login-p">Already have an account? <a href='#'>Log in</a></a></p>
+      <div class="btn-login">
+        <button type="submit">Create Account</button>
+        <p class="login-p">Already have an account? <a href="#">Log in</a></p>
+      </div>
     </div>
   </body>
 </html>

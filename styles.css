@@ -3,31 +3,28 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   overflow-x: hidden;
-  row-gap: 1rem;
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
+  font-family: "Alegreya", serif;
 }
 
 .sidebar {
   display: flex;
-  justify-content: center;
   position: relative;
   margin: 0;
-}
-
-img {
-  position: absolute;
-  bottom: 0;
-  height: 80%;
-  width: 100%;
-  object-fit: cover;
+  background-image: url("./images/traffic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
 }
 
 .form-container {
-  background-color: #f9fdfe;
+  background-color: white;
   margin: 0;
+  padding-bottom: 2rem;
 }
 
 form {
@@ -53,6 +50,29 @@ form {
   font-size: 1.2rem;
 }
 
-label {
-  border: 1px solid black;
+.credit-text {
+  font-size: small;
+  position: absolute;
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.credit-text > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-login {
+  padding-left: 36px;
+}
+
+button {
+  padding: 10px 50px;
+  color: white;
+  font-weight: bold;
+  background-color: #336481;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
