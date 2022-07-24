@@ -129,3 +129,12 @@ input:focus {
 label {
   font-weight: 500;
 }
+
+.error {
+  border: 2px solid #f04030;
+}
+
+#errorMessage {
+  font-size: small;
+  color: #f04030;
+}
