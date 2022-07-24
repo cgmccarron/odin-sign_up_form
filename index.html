@@ -52,13 +52,24 @@
           >Email <br /><input required id="email" type="email"
         /></label>
         <label for="phoneNumber"
-          >Phone Number <br /><input id="phoneNumber" type="tel"
+          >Phone Number <br /><input
+            id="phoneNumber"
+            type="tel"
+            required
+            pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
         /></label>
         <label for="password"
-          >Password <br /><input required id="password" type="password"
+          >Password <br /><input
+            class="error"
+            required
+            id="password"
+            type="password"
+            maxlength="12"
+            minlength="4"
         /></label>
         <label for="confirmPassword"
           >Confirm Password <br /><input
+            class="error"
             required
             id="confirmPassword"
             type="password"
