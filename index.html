@@ -20,12 +20,26 @@
         as your next web dev!
       </p>
       <form action="#" method="#" class="Sign up Form">
-        Let's do this!
-        <label> First Name</label>
-        <input type="text" />
+        <div class="form-header"> Let's do this!</div>
+        <label for="firstName">
+          First Name <br><input id="firstName" type="text"
+        /></label>
+        <label for="lastName">
+          Last Name <br><input id="lastName" type="text"
+        /></label>
+        <label for="email">Email <br><input id="email" type="email" /></label>
+        <label for="phoneNumber"
+          >Phone Number <br><input id="phoneNumber" type="tel"
+        /></label>
+        <label for="password"
+          >Password <br><input id="password" type="password"
+        /></label>
+        <label for="confirmPassword"
+          >Confirm Password <br><input id="confirmPassword" type="password"
+        /></label>
       </form>
       <button type="submit">Create Account</button>
-      <p class="login-p"></p>
+      <p class="login-p">Already have an account? <a href='#'>Log in</a></a></p>
     </div>
   </body>
 </html>
