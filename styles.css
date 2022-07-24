@@ -46,9 +46,10 @@ form {
 
 .info-p {
   height: 15vh;
-  padding: 10% 5%;
+  padding: 8% 5%;
   font-weight: bold;
   font-size: 1.8rem;
+  margin-bottom: 55px;
 }
 
 .title {
@@ -96,6 +97,16 @@ button {
   border: none;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.login-p > a {
+  color: #4393b0;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 input {
